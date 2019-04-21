@@ -4,7 +4,7 @@ Every complex data processing environment consists of hundreds of data pipelines
 
 Following is a task dependency graph of a workflow  DAG drawn using [DOT language](https://www.graphviz.org/doc/info/lang.html)
 
-<img src="src/first_sample.dot.svg">
+<img src="images/first_sample.dot.svg">
 
 
 ### References
