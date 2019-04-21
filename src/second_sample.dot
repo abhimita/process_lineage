@@ -1,0 +1,46 @@
+digraph D {
+    rankdir=LR;
+    graph[fontsize=12];
+    node[fontsize=12];
+    edge[fontsize=12];
+
+    subgraph cluster_1 {
+        graph[style="filled"];
+        color=lightblue;
+        label="Workflow - 1"
+        node [shape=circle style=filled fillcolor=cyan]
+        T11 [label=<T<sub>11</sub>>];
+        T12 [label=<T<sub>12</sub>>]
+        T13 [label=<T<sub>13</sub>>]
+        T14 [label=<T<sub>14</sub>>]
+        T15 [label=<T<sub>15</sub>>]
+        T16 [label=<T<sub>16</sub>>]
+        T17 [label=<T<sub>17</sub>>]
+        T18 [label=<T<sub>18</sub>>]
+        T11 -> T14
+        T11 -> T12
+        T12 -> T14
+        T12 -> T13
+        T12 -> T15
+        T13 -> T18
+        T15 -> T16 
+        T18 -> T17
+        T16 -> T17
+    }
+    subgraph cluster_2 {
+        graph[style="filled"];
+        color=aquamarine;
+        label="Workflow - 2"
+        node [shape=circle style=filled fillcolor=cyan]
+        T21 [label=<T<sub>21</sub>>];
+        T22 [label=<T<sub>22</sub>>]
+        T23 [label=<T<sub>23</sub>>]
+        T24 [label=<T<sub>24</sub>>]
+        T21 -> T22
+        T21 -> T23
+        T22 -> T24
+        T23 -> T24
+    }
+    T15 -> T22
+}
+
