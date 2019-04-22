@@ -1,4 +1,4 @@
-# Process Lineage - see the dependency graph using NetworkX
+# Process Lineage - Dependency graph using NetworkX
 
 Every complex data processing environment consists of hundreds of data pipelines. Each of these pipelines is called a workflow. A workflow may have several steps to move data around. Every unit of work within a workflow is referred as task. These tasks have dependency among them. Tasks within a workflow along-with their dependencies can be viewed as a directed acyclic graph (DAG).
 
@@ -17,6 +17,9 @@ Most of the industry grade orchestration tool like [Airflow](https://airflow.apa
 Each of the tasks in workflow has several attributes. For example - run time, start time etc. Attributes like run time can vary from one day to another as the volume of data processed can change from one day to another. To keep things simple, I will assume run time is not varying - let us assume that we are dealing with median value of the run time of each task if we have access to historical task & workflow run time data. 
 
 So the new graph looks like the following. The numbers inside curly braces is the median elapsed time for the task.
+
+<img src="images/third_sample.dot.svg">
+
 
 Additional information for these two workflows are - T<sub>24</sub> & T<sub>17</sub> are two SLA bound steps. Let us assume that they provide key metric values to show the health of the business
 
