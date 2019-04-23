@@ -34,9 +34,9 @@ Few questions that I would like to answer specially when I am on-call person
 
 Each of the problem above requires graph traversal. Instead of reinventing the wheel, I will use one of Python's very well known package named `NetworkX` 
 
-For visualizing the outcome of a graph operation, I will rely on DOT language. But instead of hand crafting DOT language script I will `pydot` to generate SVG documents which can be rendered in a browser.
+For visualizing the outcome of a graph operation, I will rely on DOT language. But instead of hand crafting DOT language script I will use `pydot` to generate SVG documents which can be rendered in a browser.
 
-Getting a large amount of real life data is useful. Most of task and workflow dependency data can be extracted from orchestration tools (e.g. Airflow or Azkaban) backend database. I will use Airflow's backend data, anonymize (task name, workflow name etc) and put them in a CSV file so that no business secret is exposed.
+Getting a large amount of real life data is useful. Most of task and workflow dependency data can be extracted from orchestration tools (e.g. Airflow or Azkaban) backend database. I will use Airflow's backend data, anonymize (task name, workflow name etc) and put them in a CSV file.
 
 ### References
 
